@@ -2,7 +2,7 @@
 let sketch = new Sketch({
 	debug: true,
 	uniforms: {
-		intensity: {value: 1, type:'f', min:0., max:3}
+		intensity: {value: 1.52, type:'f', min:0., max:3}
 	},
 	fragment: `
 		uniform float time;
@@ -44,8 +44,7 @@ let sketch = new Sketch({
 			gl_FragColor = mix(t1, t2, progress);
 
 		}
-
-	`
+	`	
+	
 });
-
 
